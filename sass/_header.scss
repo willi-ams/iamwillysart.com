@@ -1,0 +1,147 @@
+.header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 7;
+    height: 10rem;
+
+    transition: all .3s ease-in-out;
+    transition-delay: .3s;   
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // box-shadow: 0 2px 2px #efefef;
+
+    @media only screen and (max-width: $bp-medium) {
+        justify-content: center;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        height: 9rem;
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+
+        @media only screen and (max-width: $bp-medium) {
+            display: block;
+            position: absolute;
+            left: 3rem;
+
+            border: 1px solid #000;
+            padding: 1rem .5rem;
+        }
+
+        &__bar {
+            display: block;
+            width: 2.5rem;
+            height: .3rem;
+            // transition: all 0.3s ease-in-out;
+            background-color: #000;
+        }
+
+        &__bar:nth-child(2) {
+            margin: .6rem 0;
+        }
+
+        &:focus {
+            outline: none;
+            border: 1px solid #000;
+        }
+    }
+    
+    
+    &__logo {
+        margin-left: 5rem;
+        text-decoration: none;
+        display: inline-block;
+        // height: 13rem;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-left: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-left: 0; 
+        }
+
+        &--text {
+            font-family: $font-logo;
+            font-weight: 400;
+            font-size: 4.7rem;
+            color: #000;
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    ///////////////////////
+
+    &__list {
+        display: flex;
+
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
+    }
+
+    &__item {
+        list-style: none;
+        padding-bottom: .25rem;
+    
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+
+        &--active {
+            border-bottom: 1px solid #000;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__link {
+        font-size: 1.7rem;
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+    }
+
+    ///////////////////////
+
+    &__iconbox {
+        margin-right: 5rem;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-right: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
+    }
+
+    &__iconbox ion-icon {
+        font-size: 2rem;
+        color: #000
+    }
+
+    &__iconbox--link {
+        text-decoration: none;
+    }
+
+    &__iconbox--link:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+
+    // /////////////////////////////////////////////////
+}

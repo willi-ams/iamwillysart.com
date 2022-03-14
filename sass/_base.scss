@@ -1,0 +1,78 @@
+$font-body: 'Montserrat', sans-serif;   
+$font-logo: 'Comforter Brush', cursive;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;  // 1200px
+$bp-large: 62.5em;  // 1000px
+$bp-medium: 50em;   // 800px
+$bp-tab: 43.5em;    // 700px
+$bp-small: 37.5em;  // 600px
+$bp-low: 31.25em;  // 500px
+
+// $bp-largest: 75em; // 1200px (1200/16 = 75em)
+
+.mar-right-0 {
+    margin-right: 0 !important;
+}
+
+.mt-med {
+    margin-top: 5rem !important;
+}
+
+.display-1 {
+    display: block !important;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    line-height: 1.7;
+    font-family: $font-body;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.container {
+    margin-top: 11rem;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.content {
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+// scroll function
+.scroll-down header {
+    transform: translate3d(0, -100%, 0); // x y
+}
+
+.scroll-up header {
+    
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}

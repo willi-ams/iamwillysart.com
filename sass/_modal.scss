@@ -1,0 +1,133 @@
+.modal {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.884);
+    // background-color: rgba(255, 255, 255, 0.713);
+    z-index: 8;
+    animation-name: zoom;
+    animation-duration: 0.4s;
+
+    // -webkit-backdrop-filter: blur(10px);
+    // backdrop-filter: blur(10px);   // NEW CLASS
+
+    @media only screen and (max-width: $bp-small) {
+        // padding: 3rem;
+    }
+
+
+    &__icon {
+        font-size: 3rem;
+
+        @media only screen and (max-width: $bp-small) {
+            color: #fff;
+            font-size: 6rem;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        right: 1.5rem;
+        top: 2rem;
+
+        border: none;
+        background-color: transparent;
+
+
+        &--icon {
+            font-size: 3.5rem;
+            color: #000;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__prev {
+        position: absolute;
+        top: 47%;
+        left: 3rem;
+        z-index: 9;
+
+        background-color: transparent;
+        border: 1px solid #333;
+
+        @media only screen and (max-width: $bp-tab) {
+            left: 1.5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            left: 3rem;
+            border: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__image {
+        max-width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+        
+        @media only screen and (max-width: $bp-small) {
+            max-width: 100%;
+            padding: 0 3rem;
+        }
+    }
+
+    &__animation {
+        animation: displayy .4;
+        animation-delay: .4;
+    }
+
+    &__next {
+        position: fixed;
+        top: 47%;
+        right: 3rem;
+        z-index: 9;
+
+        background-color: transparent;
+        border: 1px solid #333;
+
+        @media only screen and (max-width: $bp-tab) {
+            right: 1.5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            right: 3rem;
+            border: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes displayy {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

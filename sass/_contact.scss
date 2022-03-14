@@ -1,0 +1,76 @@
+.contact {
+    padding: 4rem;
+    grid-column: full-start / col-end 4;
+
+    @media only screen and (max-width: $bp-tab) {
+        grid-column: 1 / -1;
+    }
+
+    @media only screen and (max-width: $bp-low) {
+        padding: 2.5rem;
+    }
+    
+
+    .heading-1 {
+        font-size: 5rem;
+        font-weight: 600; // no 600
+        margin: 0;
+    }
+
+    .heading-3 {
+        font-size: 1.6rem;
+        font-weight: 600; // no 600
+        margin: 0;
+    }
+
+    .heading-4 {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    &__box {
+        margin-top: 3rem;
+    }
+
+    &__question-box {
+        padding: 2.5rem;
+
+        @media only screen and (max-width: $bp-low) {
+            padding: 2.3rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 1.7rem;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: .6rem;
+            height: .6rem;
+            border-radius: 50%;
+            background-color: #000;
+            transform: translateY(-.3rem);
+            margin-right: 1.3rem;
+        }
+
+        &--span {
+            font-weight: 600;
+        }
+    }
+
+    &__text-clients {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 1.7rem;
+
+        &--span {
+            font-weight: 600;  // no 600
+        }
+    }
+
+
+}
