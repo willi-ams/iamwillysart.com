@@ -3,11 +3,11 @@
 
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(80, 2.5vw);
+    grid-template-rows: repeat(94, 2.5vw);
     // padding: 3rem; 
 
     @media only screen and (max-width: $bp-medium) {
-        grid-template-rows: repeat(194, 2.5vw);
+        grid-template-rows: repeat(213, 2.5vw);
         grid-template-columns: repeat(6, 1fr); 
     }
 
@@ -27,7 +27,7 @@
         }
 
         &--1 {
-            grid-row: 1 / span 13;
+            grid-row: 1 / span 14;
             grid-column: 1 / span 3;
 
             @media only screen and (max-width: $bp-medium) {
@@ -37,7 +37,7 @@
         }
 
         &--2 {
-            grid-row: 1 / span 15;
+            grid-row: 1 / span 16;
             grid-column: 4 / span 3;
 
             @media only screen and (max-width: $bp-medium) {
@@ -51,137 +51,157 @@
             grid-column: 7 / -1;
 
             @media only screen and (max-width: $bp-medium) {
-                grid-row: 26 / span 25;
-                grid-column: 4 / -1;
+                grid-row: 23 / span 25;
+                grid-column: 1 / span 3;
             }
         }
 
         &--4 {
-            grid-row: 14 / span 16;
+            grid-row: 15 / span 13;
             grid-column: 1 / span 3;
 
             @media only screen and (max-width: $bp-medium) {
-                grid-row: 23 / span 22;
-                grid-column: 1 / span 3;
-            }
-        }
-
-        &--5 {
-            grid-row: 16 / span 16;
-            grid-column: 4 / span 3;
-
-            @media only screen and (max-width: $bp-medium) {
-                grid-row: 51 / span 25;
+                grid-row: 26 / span 20;
                 grid-column: 4 / -1;
             }
         }
 
-        &--6 {
-            grid-row: 16 / span 10;
-            grid-column: 7 / span 3;
+        &--5 {
+            grid-row: 17 / span 16;
+            grid-column: 4 / span 3;
 
             @media only screen and (max-width: $bp-medium) {
-                grid-row: 45 / span 15;
+                grid-row: 48 / span 25;
                 grid-column: 1 / span 3;
             }
         }
 
+        &--6 {
+            grid-row: 16 / span 14;
+            grid-column: 7 / span 3;
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-row: 46 / span 20;
+                grid-column: 4 / -1;
+            }
+        }
+
         &--7 {
-            grid-row: 30 / span 15;
+            grid-row: 28 / span 14;
             grid-column: 1 / span 3;
 
             @media only screen and (max-width: $bp-medium) {
-                grid-row: 60 / span 25;
+                grid-row: 73 / span 22;
                 grid-column: 1 / span 3;
             }
         }
 
         &--8 {
-            grid-row: 32 / span 16;
+            grid-row: 33 / span 15;
             grid-column: 4 / span 3;
 
             @media only screen and (max-width: $bp-medium) {
-                grid-row: 76 / span 22;
+                grid-row: 66 / span 25;
                 grid-column: 4 / -1;
             }
         }
 
         &--9 {
-            grid-row: 26 / span 13;
+            grid-row: 30 / span 10;
             grid-column: 7 / span 3;
 
             @media only screen and (max-width: $bp-medium) {
-                grid-row: 85 / span 25;
+                grid-row: 95 / span 15;
                 grid-column: 1 / span 3;
             }
-        } 
+        }
 
         &--10 {
-            grid-row: 45 / span 16;
+            grid-row: 42 / span 14;
             grid-column: 1 / span 3;
 
             @media only screen and (max-width: $bp-medium) {
-                grid-row: 98 / span 25;
+                grid-row: 91 / span 25;
                 grid-column: 4 / -1;
             }
         }
 
         &--11 {
-            grid-row: 48 / span 16;
+            grid-row: 48 / span 15;
             grid-column: 4 / span 3;
 
             @media only screen and (max-width: $bp-medium) {
-                grid-row: 110 / span 25;
-                grid-column: 1 / span 3;
-            }
-        }
-
-        &--12 {
-            grid-row: 39 / span 16;
-            grid-column: 7 / span 3;
-
-            @media only screen and (max-width: $bp-medium) {
-                grid-row: 123 / span 22;
+                grid-row: 116 / span 20;
                 grid-column: 4 / -1;
             }
         }
 
+        &--12 {
+            grid-row: 40 / span 14;
+            grid-column: 7 / span 3;
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-row: 110 / span 24;
+                grid-column: 1 / span 3;
+            }
+        }
+
         &--13 {
-            grid-row: 61 / span 14;
+            grid-row: 56 / span 13;
             grid-column: 1 / span 3;
 
             @media only screen and (max-width: $bp-medium) {
-                grid-row: 135 / span 25;
+                grid-row: 134 / span 25;
                 grid-column: 1 / span 3;
             }
         }
 
         &--14 {
-            grid-row: 64 / span 16;
+            grid-row: 63 / span 16;
             grid-column: 4 / span 3;
 
             @media only screen and (max-width: $bp-medium) {
-                grid-row: 145 / span 22;
+                grid-row: 136 / span 25;
                 grid-column: 4 / -1;
             }
         }
 
         &--15 {
-            grid-row: 55 / span 12;
+            grid-row: 54 / span 13;
             grid-column: 7 / span 3;
 
             @media only screen and (max-width: $bp-medium) {
-                grid-row: 160 / span 22;
+                grid-row: 159 / span 22;
                 grid-column: 1 / span 3;
             }
         }
 
         &--16 {
-            grid-row: 67 / span 10;
+            grid-row: 69 / span 13;
+            grid-column: 1 / span 3;
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-row: 161 / span 25;
+                grid-column: 4 / -1;
+            }
+        }
+
+        &--17 {
+            grid-row: 79 / span 13;
+            grid-column: 4 / span 3;
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-row: 181 / span 25;
+                grid-column: 1 / span 3;
+            }
+        }
+
+        &--18 {
+            grid-row: 67 / span 14;
             grid-column: 7 / span 3;
 
             @media only screen and (max-width: $bp-medium) {
-                grid-row: 165 / span 25;
+                grid-row: 186 / span 25;
                 grid-column: 4 / -1;
             }
         }
