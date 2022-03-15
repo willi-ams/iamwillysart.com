@@ -53,15 +53,6 @@ body {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
-.scroll-down header {
-  transform: translate3d(0, -100%, 0);
-  transition: all .15s ease-in-out;
-  transition-delay: .2s; }
-
-.scroll-up header {
-  transition: all .2s ease-in-out;
-  transition-delay: .3s; }
-
 .stop-scrolling {
   height: 100%;
   overflow: hidden; }
@@ -994,7 +985,7 @@ body {
     animation-delay: .4; }
   .modal__next {
     position: fixed;
-    bottom: 47%;
+    transform: translateY(47vh);
     right: 3rem;
     z-index: 9;
     background-color: transparent;

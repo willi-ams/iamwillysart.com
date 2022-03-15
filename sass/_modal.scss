@@ -90,8 +90,9 @@
 
     &__next {
         position: fixed;
-        bottom: 47%;
+        // bottom: 47%;
         // top: 47%;
+        transform: translateY(47vh);
         right: 3rem;
         z-index: 9;
 

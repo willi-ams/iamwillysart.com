@@ -59,38 +59,38 @@
   });
 })();
 
-(() => {
+// (() => {
 
-  const body = document.body;
-  let lastScroll = 0;
+//   const body = document.body;
+//   let lastScroll = 0;
 
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset; //the current scroll number
-    console.log(window.pageYOffset);
+//   window.addEventListener("scroll", () => {
+//     const currentScroll = window.pageYOffset; //the current scroll number
+//     console.log(window.pageYOffset);
 
-    // if d currentScroll is at the top
-    // if (currentScroll <= 0) {
-    //   body.classList.remove("scroll-down");
-    //   body.classList.add("scroll-up");
-    // }
+//     // if d currentScroll is at the top
+//     // if (currentScroll <= 0) {
+//     //   body.classList.remove("scroll-down");
+//     //   body.classList.add("scroll-up");
+//     // }
 
-    // not contain scroll-down     // removes d nav display
-    if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-      body.classList.remove("scroll-up");
-      body.classList.add("scroll-down");
-    }
+//     // not contain scroll-down     // removes d nav display
+//     if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+//       body.classList.remove("scroll-up");
+//       body.classList.add("scroll-down");
+//     }
 
-    // contains scroll-down        // adds the nav display
-    if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
-      body.classList.remove("scroll-down");
-      body.classList.add("scroll-up");
-    }
+//     // contains scroll-down        // adds the nav display
+//     if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+//       body.classList.remove("scroll-down");
+//       body.classList.add("scroll-up");
+//     }
 
-    lastScroll = currentScroll;
-    console.log(`this is d ${lastScroll}`);
-  });
+//     lastScroll = currentScroll;
+//     console.log(`this is d ${lastScroll}`);
+//   });
 
-})();
+// })();
 
 document.querySelector(".hamburger").addEventListener("click", () => {
   // document.querySelector('.nav__background').style.display = 'block';

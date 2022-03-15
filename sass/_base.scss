@@ -81,18 +81,18 @@ body {
 }
 
 // scroll function
-.scroll-down header {
-    transform: translate3d(0, -100%, 0); // x y
-    transition: all .15s ease-in-out;
-    transition-delay: .2s;   
-}
+// .scroll-down header {
+//     transform: translate3d(0, -100%, 0); // x y
+//     transition: all .15s ease-in-out;
+//     transition-delay: .2s;   
+// }
 
-.scroll-up header {
-    // border-bottom: 5px solid #000;
-    transition: all .2s ease-in-out;
-    transition-delay: .3s;   
+// .scroll-up header {
+//     // border-bottom: 5px solid #000;
+//     transition: all .2s ease-in-out;
+//     transition-delay: .3s;   
 
-}
+// }
 
 .stop-scrolling {
     height: 100%;
