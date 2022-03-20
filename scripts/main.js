@@ -14,6 +14,10 @@
     document.body.classList.remove("stop-scrolling");
   }
 
+  const links = document.querySelectorAll(".menu__item");
+  const linkBtn = Array.from(links);
+  linkBtn.forEach(cur => cur.addEventListener('click', clodeModal));
+
   const modal = document.getElementById("img-modal");
   const modalImg = document.querySelector(".modal__image");
 
