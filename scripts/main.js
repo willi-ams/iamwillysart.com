@@ -14,10 +14,6 @@
     document.body.classList.remove("stop-scrolling");
   }
 
-  const links = document.querySelectorAll(".menu__item");
-  const linkBtn = Array.from(links);
-  linkBtn.forEach(cur => cur.addEventListener('click', clodeModal));
-
   const modal = document.getElementById("img-modal");
   const modalImg = document.querySelector(".modal__image");
 
@@ -103,11 +99,17 @@ document.querySelector(".hamburger").addEventListener("click", () => {
   document.querySelector(".nav__background").classList.remove("cut-display");
   document.querySelector(".nav__background").classList.add("add-display");
 
+  document.querySelector(".menu").classList.remove("cancel-display");
   document.querySelector(".menu").classList.add("enable-display");
-  document.querySelector(".menu").classList.add("cancel-display");
 });
 
-document.querySelector(".nav__background").addEventListener("click", () => {
+document.querySelector(".nav__background").addEventListener("click", removeDisplay);
+
+const links = document.querySelectorAll(".menu__item");
+const linkBtn = Array.from(links);
+linkBtn.forEach(cur => cur.addEventListener('click', removeDisplay));
+
+function removeDisplay() {
   // document.querySelector('.nav__background').style.display = 'none';
   document.body.classList.remove("stop-scrolling");
 
@@ -116,7 +118,7 @@ document.querySelector(".nav__background").addEventListener("click", () => {
 
   document.querySelector(".menu").classList.remove("enable-display");
   document.querySelector(".menu").classList.add("cancel-display");
-});
+};
 
 
 
