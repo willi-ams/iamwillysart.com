@@ -194,7 +194,7 @@ body {
 
 .cancel-display {
   left: -100%;
-  transition: all .8s ease-out; }
+  transition: all .6s ease-out; }
 
 .enable-display {
   left: 0;
